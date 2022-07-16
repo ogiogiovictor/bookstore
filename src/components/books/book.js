@@ -5,7 +5,7 @@ const Book = (props) => {
   const filterprops = props;
   return (
     <div>
-      {filterprops.map((bk) => (
+      {filterprops.book.map((bk) => (
         <SingleBook
           key={bk.id}
           title={bk.title}
