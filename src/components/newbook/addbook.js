@@ -11,7 +11,7 @@ const AddBook = () => (
 
       <div className="new-book__control">
         <label htmlFor="author">Author</label>
-        <input type="text" name="author" id="author"/>
+        <input type="text" name="author" id="author" />
       </div>
 
     </div>

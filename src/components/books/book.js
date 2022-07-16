@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import SingleBook from './singlebook';
 
 const Book = (props) => (
   <div>
     {
-                props.book.map((bk) => (
+                props.books.map((bk) => (
                   <SingleBook
                     key={bk.id}
                     title={bk.title}
@@ -19,11 +19,11 @@ const Book = (props) => (
   </div>
 );
 
-Book.propTypes = {
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  status: PropTypes.bool.isRequired,
-};
+// Book.propTypes = {
+//   title: PropTypes.string.isRequired,
+//   category: PropTypes.string.isRequired,
+//   author: PropTypes.string.isRequired,
+//   status: PropTypes.bool.isRequired,
+// };
 
 export default Book;
