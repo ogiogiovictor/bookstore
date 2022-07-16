@@ -1,0 +1,36 @@
+.main-header{
+    background-color: #ffffff;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header h2{
+  color: var(--color);
+}
+
+
+.img-pics {
+    width: 30px;
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+.main-header ul {
+    padding-top: 8px;
+}
+
+.main-header ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 2vh;
+}
+
+.main-header ul li a{
+   cursor: pointer;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: smaller;
+   color: var(--color);
+   
+}
