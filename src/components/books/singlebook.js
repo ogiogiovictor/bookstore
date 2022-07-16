@@ -8,6 +8,7 @@ const SingleBook = ({
     <small>{author}</small>
     <small>{category}</small>
     <small>{status}</small>
+    <button type="button">Remove Book</button>
   </div>
 );
 
