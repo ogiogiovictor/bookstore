@@ -1,0 +1,76 @@
+import { v4 as uuidv4 } from 'uuid';
+
+// Initial book state
+const bookState = [
+  {
+    id: 1,
+    title: 'Toilet Paper',
+    category: 'Science',
+    author: 'Frank dejoin',
+    status: true,
+  },
+  {
+    id: 2,
+    title: 'Melborn Syndy',
+    category: 'Clothing',
+    author: 'Esther Adeleke',
+    status: false,
+  },
+  {
+    id: 3,
+    title: 'Metal Chair',
+    category: 'Adame',
+    author: 'Sule Marke',
+    status: false,
+  },
+
+  {
+    id: 4,
+    title: 'Daniel Ufeli',
+    category: 'Agent47',
+    author: 'Onos Mark',
+    status: true,
+  },
+];
+
+// create action contants - This are calleds action types
+const ADD_BOOK = 'books/ADD_BOOK';
+const REMOVE_BOOK = 'books/REMOVE_BOOK';
+
+// Action Creators for the action constant
+
+// ########## Action to Add Book ###############/
+const addnewBook = (book) => ({
+  type: ADD_BOOK,
+  payload: {
+    id: uuidv4(),
+    title: book.title,
+    category: book.category,
+    author: book.author,
+    status: book.status,
+    currentChapter: book.currentChapter,
+  },
+});
+
+// ########## Delete Book ###############/
+const removeBook = (bookid) => ({
+  type: REMOVE_BOOK,
+  payload: {
+    id: bookid,
+  },
+});
+
+// Reducers that recieves the actions
+const bookReducer = (state = bookState, action) => {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [...state, action.payload];
+    case REMOVE_BOOK:
+      return [...state.filter((el) => el.id !== action.payload.id)];
+    default:
+      return state;
+  }
+};
+
+export { addnewBook, removeBook };
+export default bookReducer;

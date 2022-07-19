@@ -1,6 +1,6 @@
 .main-header {
   background-color: #fff;
-  padding: 20px 80px;
+  padding: 2px 100px;
   display: flex;
   flex-direction: row;
 }
@@ -12,7 +12,9 @@
 .img-pics {
   width: 30px;
   padding-top: 20px;
-  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  padding-right: 80px;
 }
 
 .main-header ul {
@@ -30,5 +32,5 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: smaller;
-  color: var(--color);
+  color: var(--bgborder);
 }
