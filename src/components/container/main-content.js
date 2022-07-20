@@ -1,44 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from '../books/book';
 import AddBook from '../newbook/addbook';
 
 import './container.css';
 
-const booklist = [
-  {
-    id: 1,
-    title: 'Toilet Paper',
-    category: 'Science',
-    author: 'Frank dejoin',
-    status: true,
-  },
-  {
-    id: 2,
-    title: 'Melborn Syndy',
-    category: 'Clothing',
-    author: 'Esther Adeleke',
-    status: false,
-  },
-  {
-    id: 3,
-    title: 'Metal Chair',
-    category: 'Adame',
-    author: 'Sule Marke',
-    status: false,
-  },
-];
+// const booklist = [];
 
 const MainContainer = () => {
-  const [allbooks, setBook] = useState(booklist);
+  // const [allbooks, setBook] = useState(booklist); //Move state to redux
 
-  const addBook = (book) => {
-    setBook((previousBook) => [book, ...previousBook]);
-  };
+  // Using Use Selector to grab the state
+  const allbooks = useSelector((state) => state.books);
+
+  // const addBook = (book) => {
+  //   setBook((previousBook) => [book, ...previousBook]);
+  // };
 
   return (
     // <div className="container">
     <div>
-      <Book book={allbooks} addbook={addBook} />
+      <Book book={allbooks} />
       <AddBook />
     </div>
   );

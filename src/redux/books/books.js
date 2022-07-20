@@ -1,7 +1,29 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // Initial book state
-const bookState = [];
+const bookState = [
+  {
+    id: 1,
+    title: 'Toilet Paper',
+    category: 'Science',
+    author: 'Frank dejoin',
+    status: true,
+  },
+  {
+    id: 2,
+    title: 'Melborn Syndy',
+    category: 'Clothing',
+    author: 'Esther Adeleke',
+    status: false,
+  },
+  {
+    id: 3,
+    title: 'Metal Chair',
+    category: 'Adame',
+    author: 'Sule Marke',
+    status: false,
+  },
+];
 
 // create action contants - This are calleds action types
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
