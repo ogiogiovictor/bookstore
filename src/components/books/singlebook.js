@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/books';
+// import { removeBook } from '../../redux/books/books';
+import { delBookApi } from './bookSlice';
 import Percentage from '../percentage/percentage';
 import './book.css';
 
@@ -21,7 +22,7 @@ const SingleBook = ({
         </small>
         <div>
           <button type="button"> Comment</button>
-          <button type="button" onClick={() => { dispatch(removeBook(id)); }}>Remove</button>
+          <button type="button" onClick={() => { dispatch(delBookApi(id)); }}>Remove</button>
           <button type="button">Edit</button>
         </div>
       </div>
