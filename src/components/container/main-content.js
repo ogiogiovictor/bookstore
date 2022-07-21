@@ -5,11 +5,9 @@ import AddBook from '../newbook/addbook';
 
 import './container.css';
 
-
 const MainContainer = () => {
   // Using Use Selector to grab the state
   const allbooks = useSelector((state) => state.books);
-
 
   return (
     <div>
