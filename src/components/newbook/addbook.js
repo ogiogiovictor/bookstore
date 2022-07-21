@@ -22,9 +22,6 @@ const AddBook = () => {
 
   const addNewBook = (e) => {
     e.preventDefault();
-    // const { target } = e;
-    // const title = target.title.value;
-    // const author = target.author.value;
 
     const addnewbook = {
       id: uuidv4(),
