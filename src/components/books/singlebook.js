@@ -13,26 +13,32 @@ const SingleBook = ({
   return (
     <div className="bookcontainer">
       <div className="first-block">
-        <span>{category}</span>
-        <h3>{title}</h3>
-        <small>
-          {author}
-          {' '}
-          {status}
-        </small>
-        <div>
+        <div className="fcategory">{category}</div>
+        <div className="ftitle">{title}</div>
+        <div className="fauthor">{author}</div>
+        <div className="fbutton">
           <button type="button"> Comment</button>
+          <span className="divider">|</span>
           <button type="button" onClick={() => { dispatch(delBookApi(id)); }}>Remove</button>
+          <span className="divider">|</span>
           <button type="button">Edit</button>
         </div>
       </div>
 
       <div className="second-block">
         <div><Percentage /></div>
+        <div className="spercentage">
+          <div className="percentage">64%</div>
+          <div className="status">{ status === true ? 'Completed' : 'Completed'}</div>
+        </div>
       </div>
 
       <div className="third-block">
-        <div>Third Block</div>
+        <div className="tblock">
+          <div className="currentChapter">Current Chapter</div>
+          <div className="chapter">Chapter 14</div>
+          <button type="button" className="updateProgress">Update Progress</button>
+        </div>
       </div>
 
     </div>
