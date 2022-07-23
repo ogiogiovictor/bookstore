@@ -8,6 +8,7 @@ const Book = (props) => {
       {filterprops.book.map((bk) => (
         <SingleBook
           key={bk.id}
+          id={bk.id}
           title={bk.title}
           category={bk.category}
           author={bk.author}
