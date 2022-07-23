@@ -18,20 +18,106 @@
   margin-bottom: 10px;
   border: 1px solid #e8e8e8;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  /* grid-template-columns: repeat(3, 1fr);  */
+  grid-template-columns: 1.5fr 1fr 1fr;
   padding: 1rem 1rem;
 }
 
 .first-block {
-  border: 1px solid red;
-  margin: 0;
+  margin-top: 10px;
   padding: 0;
 }
 
+.fcategory {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.ftitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.fauthor {
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: var(--color);
+  padding-top: 3px;
+}
+
+.fbutton {
+  margin-top: 10px;
+}
+
+.fbutton button {
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  color: var(--color);
+}
+
+.divider {
+  color: var(--bgborder);
+}
+
 .second-block {
-  border: 1px solid green;
+  padding: 5px;
+}
+
+.spercentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.percentage {
+  font-size: 1.5rem;
+}
+
+.status {
+  font-size: 14px;
+  color: var(--bgborder);
 }
 
 .third-block {
-  border: 1px solid blueviolet;
+  padding: 1px;
+}
+
+.tblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.currentChapter {
+  font-size: 0.813rem;
+  color: var(--bgborder);
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  opacity: 50%;
+}
+
+.chapter {
+  font-size: 1rem;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.tblock button {
+  width: 11.5rem;
+  height: 2.063rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: white;
 }

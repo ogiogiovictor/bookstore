@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 // import { addnewBook } from '../../redux/books/books';
 import { addBookApi } from '../books/bookSlice';
+import './addbook.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -48,11 +49,13 @@ const AddBook = () => {
 
   return (
     <form onSubmit={addNewBook}>
-      <div className="new-book__controls">
+      <div className="addNew">Add New Book</div>
+
+      <div className="main-input">
 
         <div className="new-book__control">
-          <label htmlFor="title">Title</label>
           <input
+            placeholder="title"
             type="text"
             name="title"
             id="title"
@@ -64,8 +67,8 @@ const AddBook = () => {
         </div>
 
         <div className="new-book__control">
-          <label htmlFor="author">Author</label>
           <input
+            placeholder="author"
             type="text"
             name="author"
             id="author"
@@ -93,10 +96,10 @@ const AddBook = () => {
           </select>
         </div>
 
-      </div>
+        <div className="new-book__actions">
+          <button type="submit">Add Book</button>
+        </div>
 
-      <div className="new-book__actions">
-        <button type="submit">Add Book</button>
       </div>
 
     </form>

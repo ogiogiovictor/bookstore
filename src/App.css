@@ -14,7 +14,7 @@ body {
 
 .App {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px 100px;
+  padding: 10px 100px;
   background-color: var(--bgcolor);
 }
 
