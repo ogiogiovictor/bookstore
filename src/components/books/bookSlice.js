@@ -7,7 +7,7 @@ const initialState = [];
 
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/v61nR7BOOe26ot4UuTZb/books';
 
-/*
+/* Old book implementation
 const BookList = (obj) => {
     const result = [];
     const keys = Object.keys(obj);
