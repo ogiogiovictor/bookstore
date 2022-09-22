@@ -26,7 +26,6 @@ Important: Once you have downloaded the code, run npm install, to install all de
 
 # Website URL - Github Pages
 The Webpage is now deployed using github pages. See url link below:
-comming soom
 
 ## Authors
 👤 **Ogiogio Victor**
